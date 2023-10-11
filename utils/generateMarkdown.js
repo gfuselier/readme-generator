@@ -18,3 +18,5 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+//use a switch case for badges
