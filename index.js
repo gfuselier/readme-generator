@@ -6,53 +6,58 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
+        name: 'title',
         message: 'What is the title of your project?',
-        name: 'title'
     }, {
         type: 'input',
+        name: 'description',
         message: 'What is the description of your project?',
-        name: 'description'
     }, {
         type: 'input',
+        name: 'installation',
         message: 'What are the installation instructions?',
-        name: 'installation'
     }, {
         type: 'input',
+        name: 'usage',
         message: 'What is the usage information?',
-        name: 'usage'
     }, {
         type: 'input',
+        name: 'contributing',
         message: 'What are the contribution guidelines?',
-        name: 'contributing'
     }, {
         type: 'input',
+        name: 'tests',
         message: 'What are the test instructions?',
-        name: 'tests'
     }, {
         type: 'list',
-        message: 'What license will your project have?',
         name: 'license',
+        message: 'What license will your project have?',
         choices: ['MIT', 'Apache', 'ISC', 'MPL 2.0']
     }, {
         type: 'input',
+        name: 'username',
         message: 'What is your github username?',
-        name: 'username'
     }, {
-        type: 'email', //maybe?
+        type: 'input', 
+        name: 'email',
         message: 'What is your email?',
-        name: 'email'
     }
 ];
 
-inquirer.prompt(questions)
-.then(data);
+
 // TODO: Create a function to write README file
 //connect generatemarkdown file here. Also need to path where the generated readme will go
 //ex: fs.writeFile('./folder/name.md)
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app. How?? look at mini project
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((data) => {
+        fs.writeFile('./samples/README.md', generateMarkdown(data), (err) => 
+        err ? console.log(err) : console.log('README generated!'));
+    })
+}
 
 // Function call to initialize app. Nothing to do here
 init();
