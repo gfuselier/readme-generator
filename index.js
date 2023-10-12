@@ -29,10 +29,10 @@ const questions = [
         message: 'What are the test instructions?',
         name: 'tests'
     }, {
-        type: 'select', //maybe?
-        message: 'What license will you include?',
-        name: 'license'
-        //add options
+        type: 'list',
+        message: 'What license will your project have?',
+        name: 'license',
+        choices: ['MIT', 'Apache', 'ISC', 'MPL 2.0']
     }, {
         type: 'input',
         message: 'What is your github username?',
@@ -53,7 +53,7 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
+// Function call to initialize app. Nothing to do here
 init();
 
 

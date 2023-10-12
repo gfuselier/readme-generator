@@ -12,9 +12,10 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 //use the github template and make some of the words template literals for what comes from user input
+// example: ${renderLicenseBadge(data.license)}
 function generateMarkdown(data) {
   return `# ${data.title}
-// example: ${renderLicenseBadge(data.license)}
+
 `;
 }
 
