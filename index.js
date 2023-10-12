@@ -46,6 +46,7 @@ const questions = [
 
 inquirer.prompt(questions);
 // TODO: Create a function to write README file
+//connect generatemarkdown file here
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
