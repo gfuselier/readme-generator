@@ -44,13 +44,14 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions);
+inquirer.prompt(questions)
+.then(data);
 // TODO: Create a function to write README file
 //connect generatemarkdown file here. Also need to path where the generated readme will go
 //ex: fs.writeFile('./folder/name.md)
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app. How?? look at mini project
 function init() {}
 
 // Function call to initialize app. Nothing to do here
