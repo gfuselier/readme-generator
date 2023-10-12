@@ -1,24 +1,34 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 //use a switch case for badges
-function renderLicenseBadge(license) {
-  if (license) {
+// function renderLicenseBadge(license) {
+//   if (license) {
 
-  } else {return "";}
-}
+//   } else {return "";}
+// }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  "https://img.shields.io/badge/license-MIT-yellow"
-
+  switch (license) {
+    case 'MIT':
+      return "https://img.shields.io/badge/license-MIT-yellow";
+    case 'Apache 2.0':
+      return "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
+    case 'ISC':
+      return "https://img.shields.io/badge/License-ISC-blue.svg";
+    case 'quotient':
+      return "https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg";
+    default:
+      return "";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `This project is ${license} licensed.`
+    return `This application is covered under the ${license} license.`
   } else { return ""}
 }
 
@@ -29,7 +39,7 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-![Static Badge](${renderLicenseLink(data.license)})
+![License](${renderLicenseLink(data.license)})
 
 ## Description
 
@@ -66,7 +76,7 @@ ${data.tests}
 
 ## Questions
 
-If you have any questions about this repository, please contact me at <${data.email}>.
+If you have any questions about this application, please contact me at <${data.email}>.
 To view my other projects, check out my [github profile](https://github.com/${data.username}).
 `}
 
