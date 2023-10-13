@@ -55,7 +55,7 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
-        fs.writeFile('./samples/README.md', generateMarkdown(data), (err) => 
+        fs.writeFile('./sample/README.md', generateMarkdown(data), (err) => 
         err ? console.log(err) : console.log('README generated!'));
     })
 }
