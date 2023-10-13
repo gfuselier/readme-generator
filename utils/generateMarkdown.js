@@ -1,14 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-//use a switch case for badges
-// function renderLicenseBadge(license) {
-//   if (license) {
-
-//   } else {return "";}
-// }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Creates a function that returns the license link.
+// If there is no license, returns an empty string
 function renderLicenseLink(license) {
   switch (license) {
     case 'MIT':
@@ -24,17 +15,15 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//Creates a function that returns the license section of README
+// If there is no license, returns an empty string
 function renderLicenseSection(license) {
   if (license) {
     return `This application is covered under the ${license} license.`
   } else { return ""}
 }
 
-// TODO: Create a function to generate markdown for README
-//use the github template and make some of the words template literals for what comes from user input
-// example: ${renderLicenseBadge(data.license)}
+//Creates a function to generate markdown for the README
 function generateMarkdown(data) {
   return `
 # ${data.title}
@@ -80,4 +69,5 @@ If you have any questions about this application, please contact me at <${data.e
 To view my other projects, check out my [github profile](https://github.com/${data.username}).
 `}
 
+//Exports the generateMarkdown function so index.js can use it
 module.exports = generateMarkdown;
