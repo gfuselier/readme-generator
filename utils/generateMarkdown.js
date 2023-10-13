@@ -17,7 +17,7 @@ function renderLicenseLink(license) {
       return "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
     case 'ISC':
       return "https://img.shields.io/badge/License-ISC-blue.svg";
-    case 'quotient':
+    case 'MPL 2.0':
       return "https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg";
     default:
       return "";

@@ -1,11 +1,11 @@
 
-# Test1
+# test 3
 
-![License](https://img.shields.io/badge/license-MIT-yellow)
+![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
 
 ## Description
 
-something
+fixed the badge
 
 ## Table of Contents
 
@@ -18,25 +18,25 @@ something
 
 ## Installation
 
-something
+none
 
 ## Usage
 
-something
+none
 
 ## Contributing
 
-something
+none
 
 ## License
 
-This application is covered under the MIT license.
+This application is covered under the MPL 2.0 license.
 
 ## Tests
 
-idk
+none
 
 ## Questions
 
-If you have any questions about this application, please contact me at <gf@gmail.com>.
-To view my other projects, check out my [github profile](https://github.com/gfuselier).
+If you have any questions about this application, please contact me at <g@email.com>.
+To view my other projects, check out my [github profile](https://github.com/gf).
