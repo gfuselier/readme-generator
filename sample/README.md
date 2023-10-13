@@ -1,11 +1,11 @@
 
-# test 3
+# New Project
 
-![License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
 ## Description
 
-fixed the badge
+This is my new project using node.js
 
 ## Table of Contents
 
@@ -22,21 +22,21 @@ none
 
 ## Usage
 
-none
+None at this time.
 
 ## Contributing
 
-none
+If you'd like to contribute, email me!
 
 ## License
 
-This application is covered under the MPL 2.0 license.
+This application is covered under the MIT license.
 
 ## Tests
 
-none
+No test instructions.
 
 ## Questions
 
-If you have any questions about this application, please contact me at <g@email.com>.
-To view my other projects, check out my [github profile](https://github.com/gf).
+If you have any questions about this application, please contact me at <gisellefuselier@gmail.com>.
+To view my other projects, check out my [github profile](https://github.com/gfuselier).
